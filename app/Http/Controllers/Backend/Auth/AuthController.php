@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Backend\Auth;
 
-use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -55,7 +58,7 @@ class AuthController extends Controller
         ]);
 
         Auth::login($user);
-        return redirect('/dashboard');
+        return redirect('dashboard');
     }
 
     // Proses logout
