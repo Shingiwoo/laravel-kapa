@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/fonts/flag-icons.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/@form-validation/form-validation.css')}}" />
 
     <!-- Page CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/cards-advance.css')}}" />

@@ -52,11 +52,13 @@
                                     <label class="form-label" for="current_password">Current Password</label>
                                     <div class="input-group input-group-merge">
                                         <input class="form-control" type="password" name="current_password"
-                                            id="current_password"
-                                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                                            id="current_password" placeholder="············" />
                                         <span class="input-group-text cursor-pointer"><i
                                                 class="icon-base ti tabler-eye-off icon-xs"></i></span>
                                     </div>
+                                    @error('current_password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="row gy-sm-6 gy-2 mb-sm-0 mb-2">
@@ -64,21 +66,25 @@
                                     <label class="form-label" for="new_password">New Password</label>
                                     <div class="input-group input-group-merge">
                                         <input class="form-control" type="password" id="new_password" name="new_password"
-                                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                                            placeholder="············" />
                                         <span class="input-group-text cursor-pointer"><i
                                                 class="icon-base ti tabler-eye-off icon-xs"></i></span>
                                     </div>
+                                    @error('new_password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
-
                                 <div class="mb-6 col-md-6 form-password-toggle form-control-validation">
                                     <label class="form-label" for="new_password_confirmation">Confirm New Password</label>
                                     <div class="input-group input-group-merge">
                                         <input class="form-control" type="password" name="new_password_confirmation"
-                                            id="new_password_confirmation"
-                                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                                            id="new_password_confirmation" placeholder="············" />
                                         <span class="input-group-text cursor-pointer"><i
                                                 class="icon-base ti tabler-eye-off icon-xs"></i></span>
                                     </div>
+                                    @error('new_password_confirmation')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <h6 class="text-body">Password Requirements:</h6>
@@ -95,87 +101,7 @@
                     </div>
                 </div>
                 <!--/ Change Password -->
-
-                <!-- Recent Devices -->
-                <div class="card mb-6">
-                    <h5 class="card-header">Recent Devices</h5>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th class="text-truncate">Browser</th>
-                                    <th class="text-truncate">Device</th>
-                                    <th class="text-truncate">Location</th>
-                                    <th class="text-truncate">Recent Activities</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-truncate text-heading fw-medium">
-                                        <i
-                                            class="icon-base ti tabler-brand-windows icon-md align-top text-info me-2"></i>Chrome
-                                        on Windows
-                                    </td>
-                                    <td class="text-truncate">HP Spectre 360</td>
-                                    <td class="text-truncate">Switzerland</td>
-                                    <td class="text-truncate">10, July 2021 20:07</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-truncate text-heading fw-medium">
-                                        <i
-                                            class="icon-base ti tabler-device-mobile icon-md align-top text-danger me-2"></i>Chrome
-                                        on iPhone
-                                    </td>
-                                    <td class="text-truncate">iPhone 12x</td>
-                                    <td class="text-truncate">Australia</td>
-                                    <td class="text-truncate">13, July 2021 10:10</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-truncate text-heading fw-medium">
-                                        <i
-                                            class="icon-base ti tabler-brand-android icon-md align-top text-success me-2"></i>Chrome
-                                        on Android
-                                    </td>
-                                    <td class="text-truncate">Oneplus 9 Pro</td>
-                                    <td class="text-truncate">Dubai</td>
-                                    <td class="text-truncate">14, July 2021 15:15</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-truncate text-heading fw-medium">
-                                        <i class="icon-base ti tabler-brand-apple icon-md align-top me-2"></i>Chrome on
-                                        MacOS
-                                    </td>
-                                    <td class="text-truncate">Apple iMac</td>
-                                    <td class="text-truncate">India</td>
-                                    <td class="text-truncate">16, July 2021 16:17</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-truncate text-heading fw-medium">
-                                        <i
-                                            class="icon-base ti tabler-brand-windows icon-md align-top text-warning me-2"></i>Chrome
-                                        on Windows
-                                    </td>
-                                    <td class="text-truncate">HP Spectre 360</td>
-                                    <td class="text-truncate">Switzerland</td>
-                                    <td class="text-truncate">20, July 2021 21:01</td>
-                                </tr>
-                                <tr class="border-transparent">
-                                    <td class="text-truncate text-heading fw-medium">
-                                        <i
-                                            class="icon-base ti tabler-brand-android icon-md align-top text-success me-2"></i>Chrome
-                                        on Android
-                                    </td>
-                                    <td class="text-truncate">Oneplus 9 Pro</td>
-                                    <td class="text-truncate">Dubai</td>
-                                    <td class="text-truncate">21, July 2021 12:22</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!--/ Recent Devices -->
             </div>
         </div>
     </div>
 @endsection
-

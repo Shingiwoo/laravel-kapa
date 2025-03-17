@@ -54,9 +54,6 @@
 <script src="{{ asset('assets/vendor/libs/swiper/swiper.js') }}"></script>
 <script src="{{ asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}"></script>
 <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-<script src="{{ asset('assets/vendor/libs/@form-validation/popular.js') }}"></script>
-<script src="{{ asset('assets/vendor/libs/@form-validation/bootstrap5.js') }}"></script>
-<script src="{{ asset('assets/vendor/libs/@form-validation/auto-focus.js') }}"></script>
 
 <!-- Main JS -->
 
