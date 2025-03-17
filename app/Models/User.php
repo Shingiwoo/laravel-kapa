@@ -46,4 +46,24 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $url = url(route('password.reset', ['token' => $token, 'email' => $this->email], false));
+        $this->notify(new class($url) extends \Illuminate\Auth\Notifications\ResetPassword {
+            public $url;
+
+            public function __construct($url)
+            {
+                $this->url = $url;
+            }
+
+            public function toMail($notifiable)
+            {
+                return (new MailMessage)
+                    ->subject('Reset Password Notification')
+                    ->markdown('emails.reset-password', ['url' => $this->url]);
+            }
+        });
+    }
 }

@@ -6,7 +6,7 @@
                 <script>
                     document.write(new Date().getFullYear());
                 </script>
-                , All Rights Reserved <a href="" class="footer-link">KAPA</a>
+                All Rights Reserved <a href="" class="footer-link">KAPA</a>
             </div>
         </div>
     </div>

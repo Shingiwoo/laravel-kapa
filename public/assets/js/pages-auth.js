@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
               }
             }
           },
-          'login': {
+          login: {
             validators: {
               notEmpty: {
                 message: 'Please enter email / username'
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
               }
             }
           },
-          'password_confirmation': {
+          password_confirmation: {
             validators: {
               notEmpty: {
                 message: 'Please confirm password'
