@@ -53,6 +53,10 @@
 <script src="{{ asset('assets/vendor/libs/apex-charts/apexcharts.js') }}"></script>
 <script src="{{ asset('assets/vendor/libs/swiper/swiper.js') }}"></script>
 <script src="{{ asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/@form-validation/popular.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/@form-validation/bootstrap5.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/@form-validation/auto-focus.js') }}"></script>
 
 <!-- Main JS -->
 
@@ -60,6 +64,7 @@
 
 <!-- Page JS -->
 <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
+<script src="{{ asset('assets/js/pages-account-settings-security.js')}}"></script>
 </body>
 
 </html>

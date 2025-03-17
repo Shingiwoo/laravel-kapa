@@ -95,13 +95,21 @@
                         </div>
                         <!-- /Logo -->
                         <h4 class="mb-1">Welcome to KAPA! 👋</h4>
-                        <p class="mb-6">Please sign-in to your account and start the adventure</p>
-
-                        <form id="formAuthentication" class="mb-4" method="POST" action="{{ route('login') }}">
+                        <p class="mb-6">Please sign-in to your account</p>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form id="formAuthentication" class="mb-4 mt-2" method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="mb-6 form-control-validation">
-                                <label for="email" class="form-label">Email or Username</label>
-                                <input type="text" class="form-control" id="email" name="email-username"
+                                <label for="login" class="form-label">Email or Username</label>
+                                <input type="text" class="form-control" id="login" name="login"
                                     placeholder="Enter your email or username" autofocus />
                             </div>
                             <div class="mb-6 form-password-toggle form-control-validation">

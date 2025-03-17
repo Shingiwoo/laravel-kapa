@@ -11,14 +11,25 @@ document.addEventListener('DOMContentLoaded', function () {
     if (formAuthentication && typeof FormValidation !== 'undefined') {
       FormValidation.formValidation(formAuthentication, {
         fields: {
+            name: {
+              validators: {
+                notEmpty: {
+                  message: 'Please enter name'
+                },
+                stringLength: {
+                  min: 8,
+                  message: 'Name must be more than 8 characters'
+                }
+              }
+            },
           username: {
             validators: {
               notEmpty: {
                 message: 'Please enter username'
               },
               stringLength: {
-                min: 6,
-                message: 'Username must be more than 6 characters'
+                min: 8,
+                message: 'Username must be more than 8 characters'
               }
             }
           },
@@ -32,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
               }
             }
           },
-          'email-username': {
+          'login': {
             validators: {
               notEmpty: {
                 message: 'Please enter email / username'
               },
               stringLength: {
-                min: 6,
-                message: 'Username must be more than 6 characters'
+                min: 8,
+                message: 'Username must be more than 8 characters'
               }
             }
           },
@@ -49,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 message: 'Please enter your password'
               },
               stringLength: {
-                min: 6,
-                message: 'Password must be more than 6 characters'
+                min: 8,
+                message: 'Password must be more than 8 characters'
               }
             }
           },
-          'confirm-password': {
+          'password_confirmation': {
             validators: {
               notEmpty: {
                 message: 'Please confirm password'
@@ -64,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 message: 'The password and its confirmation do not match'
               },
               stringLength: {
-                min: 6,
-                message: 'Password must be more than 6 characters'
+                min: 8,
+                message: 'Password must be more than 8 characters'
               }
             }
           },

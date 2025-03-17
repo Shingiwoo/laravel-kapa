@@ -409,7 +409,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="pages-account-settings-account.html">
+                        <a class="dropdown-item" href="{{ route('change.password.form') }}">
                             <i class="icon-base ti tabler-settings me-3 icon-md"></i><span
                                 class="align-middle">Settings</span>
                         </a>
@@ -425,7 +425,7 @@
                     </li>
                     <li>
                         <div class="d-grid px-2 pt-2 pb-1">
-                            <a class="btn btn-sm btn-danger d-flex" href="{{ route('user.logout') }}">
+                            <a class="btn btn-sm btn-danger d-flex" href="{{ route('logout') }}">
                                 <small class="align-middle">Logout</small>
                                 <i class="icon-base ti tabler-logout ms-2 icon-14px"></i>
                             </a>
