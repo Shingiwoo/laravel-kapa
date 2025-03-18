@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Backend\Auth;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Auth\Events\PasswordReset;
 
 class AuthController extends Controller {
     // Tampilkan form login
